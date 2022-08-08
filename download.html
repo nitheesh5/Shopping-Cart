@@ -1,0 +1,13 @@
+<html>
+<body>
+
+<a download="fossil-watch-500x500.png" href="fossil-watch-500x500.png" onclick="downloadCanvas(this);">Download example.jpg</a>
+<script>
+async function downloadCanvas(el) {
+  const imageURI = canvas.toDataURL("fossil-watch-500x500.png");
+  el.href = imageURI;
+};
+</script>
+
+</body>
+</html>
